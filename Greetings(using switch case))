@@ -1,0 +1,36 @@
+
+package first;
+import java.util.*;
+public class SwitchCase {
+  public static void main(String[] args) {
+  Scanner sc=new Scanner(System.in);
+    int ch=0;
+    
+    System.out.println("Enter your first name: ");
+    String name=sc.nextLine();
+    System.out.println("TYPES OF GREETINGS:\n "
+            + "Enter 1 to be greeted with good morning\n"
+            + "Enter 2 to be greeted with good afternoon\n"
+            + "Enter 3 to be greeted with good evening\n"
+            + "Enter your choice: ");
+    ch=sc.nextInt();
+    
+    switch (ch) {
+      case 1:
+        System.out.println("Good morning "+name+"!");
+        break;
+
+      case 2:
+        System.out.println("Good afternoon "+name+"!");
+        break;
+
+      case 3:
+        System.out.println("Good evening "+name+"!");
+        break;
+
+      default:
+        System.out.println("Wrong input!");
+        break;
+    }
+  }
+}
